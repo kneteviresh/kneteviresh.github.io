@@ -22936,7 +22936,7 @@
 	
 	Sidebar.defaultProps = {
 	    top: 0,
-	    fontSize: 25,
+	    fontSize: 20,
 	    textColor: 'black',
 	    fontStyle: 'sans-serif', //'Arial, Helvetica, sans-serif',
 	    profileVisible: true,
@@ -22955,7 +22955,7 @@
 	        ),
 	        ' ',
 	        _react2.default.createElement('br', null),
-	        'React-sliding-sidemenu is a fully customisable, responsive overlay side menu sliding from left. this is the description field which will be user passed free text or DOM element. Side menu has following sections',
+	        'React-sliding-sidemenu is a fully customisable, responsive overlay side menu sliding from left. this is the description section which will be user passed free text or DOM element. Side menu has following sections',
 	        _react2.default.createElement(
 	            'ul',
 	            null,
@@ -22989,45 +22989,45 @@
 	    profileImage: _profilePic2.default,
 	    dataForLinks: [{
 	        mainLink: "Main Link 1",
-	        href: "www.google.com",
+	        href: "#",
 	        subLinks: [{
 	            subLink: "Sub Link 1",
-	            href: "www.google.com",
+	            href: "#",
 	            childLinks: [{
 	                childLink: 'Child Link 1',
-	                href: 'www.google.com'
+	                href: '#'
 	            }, {
 	                childLink: 'Child Link 2',
-	                href: 'www.google.com'
+	                href: '#'
 	            }]
 	        }, {
 	            subLink: "Sub Link 2",
-	            href: "www.google.com",
+	            href: "#",
 	            childLinks: []
 	        }, {
 	            subLink: "SubLink 3",
-	            href: "www.google.com",
+	            href: "#",
 	            childLinks: []
 	        }]
 	    }, {
 	        mainLink: "Main Link 2",
-	        href: "www.google.com",
+	        href: "#",
 	        subLinks: [{
 	            subLink: "Sub Link 1",
-	            href: "www.google.com",
+	            href: "#",
 	            childLinks: []
 	        }, {
 	            subLink: "Sub Link 2",
-	            href: "www.google.com",
+	            href: "#",
 	            childLinks: []
 	        }, {
 	            subLink: "Sub Link 3",
-	            href: "www.google.com",
+	            href: "#",
 	            childLinks: []
 	        }]
 	    }, {
 	        mainLink: "Main Link 3",
-	        href: "www.google.com",
+	        href: "#",
 	        subLinks: []
 	    }]
 	
@@ -23871,13 +23871,13 @@
 	                                _reactRouterDom.Link,
 	                                { style: {
 	                                        'color': _this2.props.sidebarLinksProps.textColor
-	                                    }, className: 'childLinks anchorLinks', to: '/dummy' },
+	                                    }, className: 'childLinks anchorLinks', to: childLink.href },
 	                                childLink.childLink
 	                            ) : _react2.default.createElement(
 	                                'a',
 	                                { style: {
 	                                        'color': _this2.props.sidebarLinksProps.textColor
-	                                    }, className: 'childLinks anchorLinks', href: '/dummy', onClick: function onClick(e) {
+	                                    }, className: 'childLinks anchorLinks', href: childLink.href, onClick: function onClick(e) {
 	                                        return _this2.handleMainLinkClick(chilldLink, e);
 	                                    } },
 	                                childLink.childLink
@@ -23923,13 +23923,13 @@
 	                                _reactRouterDom.Link,
 	                                { style: {
 	                                        'color': _this3.props.sidebarLinksProps.textColor
-	                                    }, className: 'SubLinks anchorLinks', to: '/dummy' },
+	                                    }, className: 'SubLinks anchorLinks', to: subLink.href },
 	                                subLink.subLink
 	                            ) : _react2.default.createElement(
 	                                'a',
 	                                { style: {
 	                                        'color': _this3.props.sidebarLinksProps.textColor
-	                                    }, className: 'SubLinks anchorLinks', href: '/dummy', onClick: function onClick(e) {
+	                                    }, className: 'SubLinks anchorLinks', href: subLink.href, onClick: function onClick(e) {
 	                                        return _this3.handleMainLinkClick(subLink, e);
 	                                    } },
 	                                subLink.subLink
@@ -23979,7 +23979,7 @@
 	                                _reactRouterDom.Link,
 	                                { style: {
 	                                        'color': _this4.props.sidebarLinksProps.textColor
-	                                    }, className: 'MainLinks anchorLinks', to: '/dummy' },
+	                                    }, className: 'MainLinks anchorLinks', to: link.href },
 	                                link.mainLink
 	                            ) : _react2.default.createElement(
 	                                'a',
@@ -23987,7 +23987,7 @@
 	                                        'color': _this4.props.sidebarLinksProps.textColor
 	                                    }, className: 'MainLinks anchorLinks', onClick: function onClick(e) {
 	                                        return _this4.handleMainLinkClick(link, e);
-	                                    }, href: '/dummy' },
+	                                    }, href: link.href },
 	                                link.mainLink
 	                            )
 	                        ),
