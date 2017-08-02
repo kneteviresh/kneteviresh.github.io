@@ -9941,7 +9941,7 @@
 	                    'div',
 	                    { className: 'sidebarProfile-profileImage' },
 	                    _react2.default.createElement('img', { onClick: this.toggleImageView,
-	                        className: 'sidebarProfile-profileImage-image ' + (this.state.imageFullView ? 'fullView' : 'img-circle'),
+	                        className: 'sidebarProfile-profileImage-image ' + (this.state.imageFullView ? 'fullView' : 'circleView'),
 	                        src: this.props.SidebarProfileProps.profileImage,
 	                        alt: 'profile picture' }),
 	                    !this.state.imageFullView && _react2.default.createElement(
@@ -10010,7 +10010,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".sidebarProfile {\n  width: 100%;\n  height: 250px;\n  margin: auto;\n  padding: 5px;\n  text-align: center; }\n  .sidebarProfile .sidebarProfile-profileImage {\n    height: 100%;\n    width: 100%; }\n    .sidebarProfile .sidebarProfile-profileImage .sidebarProfile-profileImage-image {\n      width: 50%;\n      height: 75%;\n      cursor: pointer;\n      transition: all 1s; }\n    .sidebarProfile .sidebarProfile-profileImage .sidebarProfile-profileImage-image.fullView {\n      width: 100%;\n      height: 100%;\n      cursor: pointer;\n      transition: all 1s; }\n    .sidebarProfile .sidebarProfile-profileImage .sidebarProfile-userName {\n      color: black;\n      font-size: 25px;\n      margin-top: 15px; }\n", ""]);
+	exports.push([module.id, ".sidebarProfile {\n  width: 100%;\n  height: 250px;\n  margin: auto;\n  padding: 5px;\n  text-align: center; }\n  .sidebarProfile .sidebarProfile-profileImage {\n    height: 100%;\n    width: 100%; }\n    .sidebarProfile .sidebarProfile-profileImage .sidebarProfile-profileImage-image {\n      width: 50%;\n      height: 75%;\n      cursor: pointer;\n      transition: all 1s; }\n    .sidebarProfile .sidebarProfile-profileImage .sidebarProfile-profileImage-image.fullView {\n      width: 100%;\n      height: 100%;\n      cursor: pointer;\n      transition: all 1s; }\n    .sidebarProfile .sidebarProfile-profileImage .sidebarProfile-profileImage-image.circleView {\n      border-radius: 50%;\n      cursor: pointer;\n      transition: all 1s; }\n    .sidebarProfile .sidebarProfile-profileImage .sidebarProfile-userName {\n      color: black;\n      font-size: 25px;\n      margin-top: 15px; }\n", ""]);
 	
 	// exports
 
