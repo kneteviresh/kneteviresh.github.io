@@ -10072,7 +10072,7 @@
 
 	"use strict";
 	
-	module.exports = __webpack_require__.p + "src/]profilePic.jpg";
+	module.exports = __webpack_require__.p + "./src/]profilePic.jpg";
 
 /***/ }),
 /* 99 */
