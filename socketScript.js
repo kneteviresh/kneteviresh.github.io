@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 function connect(){
-  stompClient = Stomp.client("wss://test.payworks.io/v1/cloudpos/websocket");
+  stompClient = Stomp.client("wss://");
   stompClient.connect({
     "serialNumber" : Math.trunc(Math.random()*1000000)
   }, function(frame){
